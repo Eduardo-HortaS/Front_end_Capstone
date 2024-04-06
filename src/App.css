@@ -1,4 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text&family=Karla&display=swap');
+
+/* Markazi Text */
+h1, .display-title {
+  font-family: 'Markazi Text', serif;
+  font-weight: 500; /* Medium */
+  font-size: 64pt;
+}
+
+h2, .sub-title {
+  font-family: 'Markazi Text', serif;
+  font-size: 40pt;
+}
+
+/* Karla */
+p.lead-text, .lead-text {
+  font-family: 'Karla', sans-serif;
+  font-weight: 500; /* Medium */
+  font-size: 18pt;
+}
+
+h3, .section-title {
+  font-family: 'Karla', sans-serif;
+  font-weight: 800; /* Extra Bold */
+  font-size: 20pt;
+  text-transform: uppercase;
+}
+
+h4, .categories {
+  font-family: 'Karla', sans-serif;
+  font-weight: 800; /* Extra Bold */
+  font-size: 16pt;
+}
+
+h5, .card-title {
+  font-family: 'Karla', sans-serif;
+  font-weight: 700; /* Bold */
+  font-size: 18pt;
+}
+
+p, .paragraph-text {
+  font-family: 'Karla', sans-serif;
+  font-size: 16pt;
+  line-height: 1.5;
+  max-width: 65ch; /* Max 65 characters per line */
+}
+
+p.highlight-text, .highlight-text {
+  font-family: 'Karla', sans-serif;
+  font-weight: 500; /* Medium */
+  font-size: 16pt;
+}
+
+span {
+  font-family: 'Karla', sans-serif;
+  font-size: 16pt;
+}
+
+.text-primary-green {
+  color: #495E57;
+}
+.text-primary-yellow {
+  color: #F4CE14;
+}
+
+.text-secondary-orange {
+  color: #EE9972;
+}
+
+.text-secondary-pink {
+  color: #FBDABB;
+}
+
+.text-secondary-beige {
+  color: #EDEFEE;
+}
+
+.text-secondary-grey {
+  color: #333333;
+}
+
+.button {
+  font-family: 'Karla', sans-serif;
+  font-weight: 700; /* Bold */
+  font-size: 16pt;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #F4CE14;
+}
+
 .App {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); /* Creates 12 equal-width columns */
+  grid-template-rows: repeat(6, auto); /* Makes the row height fit to content */
+  grid-gap: 10px; /* Sets a 10px gap between grid items */
   text-align: center;
 }
 
@@ -15,17 +111,18 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  grid-column: span 12; /* Makes the header span all 12 columns */
+  grid-row: 1; /* Places the header in the first row */
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); /* Creates 12 equal-width columns within the header */
   align-items: center;
-  justify-content: center;
+  justify-items: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #EDEFEE;
 }
 
 .App-link {
-  color: #61dafb;
+  color: #F4CE14;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +132,45 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+nav {
+  background-color: #282c34; /* Same as .App-header for consistency */
+  padding: 10px 0;
+}
+
+ul {
+  list-style-type: none; /* Removes bullet points */
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Ensures the nav container contains its floated children */
+  text-align: center; /* Centers the list items */
+}
+
+li {
+  display: inline; /* Places list items in a line */
+  margin: 0 20px; /* Adds some space between list items */
+}
+
+li a {
+  font-family: 'Karla', sans-serif;
+  font-size: 16pt;
+  color: #495E57; /* Matches .App-header color */
+  text-decoration: none; /* Removes underline */
+}
+
+li a:hover {
+  color: #F4CE14; /* Matches .App-link color */
+}
+
+img {
+  max-width: 100%; /* Ensures images are not larger than their container */
+  height: auto; /* Maintains the aspect ratio of the image */
+  border-radius: 10px; /* Gives images slightly rounded corners for a softer look */
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for a bit of depth */
+  transition: transform 0.2s; /* Smooth transition for hover effect */
+}
+
+img:hover {
+  transform: sc
 }
