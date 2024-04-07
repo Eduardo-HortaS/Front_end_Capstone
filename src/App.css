@@ -172,5 +172,5 @@ img {
 }
 
 img:hover {
-  transform: sc
+  transform: scale(1.1);
 }

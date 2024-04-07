@@ -1,14 +1,23 @@
 import './App.css';
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import HomePage	from	'./HomePage'; 
+import About from './About';
+import Menu from './Menu';
+import BookingPage from './BookingPage';
+import Order from './Order';
+import Login from './Login';
 
 function Main() {
   return (
-    <main>
-      <article>
-        <h2>About Us</h2>
-        <p>Little Lemon is a family-owned restaurant in the heart of downtown. We pride ourselves on using the freshest ingredients to make the best dishes in town. Our menu is a mix of modern and classic recipes that are sure to please everyone in your party. We look forward to seeing you soon!</p>
-      </article>
-    </main>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/menu" element={<Menu />} />
+      <Route path="/reservations" element={<BookingPage />} />
+      <Route path="/order" element={<Order />} />
+      <Route path="/login" element={<Login />} />
+    </Routes>
   );
 }
 

@@ -6,7 +6,6 @@ function Header() {
   return (
     <header>
       <img src={logo} alt="Little Lemon logo"/>
-      <h1>Welcome to Little Lemon</h1>
     </header>
   );
 }
