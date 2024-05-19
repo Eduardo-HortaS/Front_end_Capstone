@@ -1,7 +1,7 @@
 
 # Description
 
-This front-end capstone project involves developing a React web app for the fictional Little Lemon restaurant, focusing on a table booking system and supporting pages such as the homepage, about, menu, and reservations. Key skills demonstrated include effective use of React concepts, data handling with APIs, and enhancing UX/UI design through iterative evaluation and accessibility considerations, particularly in form design. Testing was also implemented to improve maintanability and confidence.
+This front-end capstone project involves developing a React web app for the fictional Little Lemon restaurant, focusing on a table booking system and supporting pages such as the homepage, about, menu, and reservations. Key skills demonstrated include effective use of React concepts, data handling with APIs, and enhancing UX/UI design through iterative evaluation and accessibility considerations, particularly in form design. Testing was also implemented to improve maintainability and confidence.
 
 # Getting Started with Create React App
 
