@@ -1,4 +1,3 @@
-import './App.css';
 import React, { useState } from 'react';
 
 function Login() {
@@ -26,7 +25,7 @@ function Login() {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button type="submit">Login</button>
+        <button type="submit" aria-label='Submit login info'>Login</button>
       </form>
     </div>
   );

@@ -1,18 +1,17 @@
-import './App.css';
 import React from 'react';
 import CallToAction from './CallToAction';
 import Specials from './Specials';
-import CustomersSay from './CustomersSay';
-import Chicago from './Chicago';
+import Testimonials from './Testimonials';
+import About from './About';
 
 function HomePage() {
   return (
-    <div>
+    <main>
       <CallToAction />
       <Specials />
-      <CustomersSay />
-      <Chicago />
-    </div>
+      <Testimonials />
+      <About />
+    </main>
   );
 }
 
